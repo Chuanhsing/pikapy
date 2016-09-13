@@ -119,7 +119,7 @@ def create_account(username, password, email, birthday):
 
     elem = driver.find_element_by_name("dob")
     elem.send_keys(birthday)
-    driver.find_element_by_xpath("//select[@name='country']/option[@value='TW']").click()
+    driver.find_element_by_xpath("//select[@name='country']/option[@value='Taiwan']").click()
     elem.submit()
     # Todo: ensure valid birthday
 
