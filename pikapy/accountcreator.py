@@ -122,6 +122,8 @@ def create_account(username, password, email, birthday):
     elem.submit()
     # Todo: ensure valid birthday
 
+    driver.find_element_by_xpath("//select[@name='country']/option[@value='TW']").click()
+
     # Create account page
     print("Step 2: Entering account details")
     assert driver.current_url == "{}/parents/sign-up".format(BASE_URL)
